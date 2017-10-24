@@ -130,13 +130,13 @@ class MainActivity : FragmentActivity() {
         val wv = findViewById(R.id.twitterview) as WebView
         val client = WebViewClient() as WebViewClient
         wv.setWebViewClient(client)
-        wv.loadUrl("https://twitter.com/search?q=%23soccer")
+        wv.loadUrl("https://twitter.com/search?q=%23県大祭tpu2017")
         wv.getSettings().setJavaScriptEnabled(true)
 
         //set twitter button
         twitterbutton.setOnClickListener{
             v->
-            val uri = Uri.parse("https://twitter.com") as Uri
+            val uri = Uri.parse("https://mobile.twitter.com/compose/tweet?text=%23県大祭tpu2017") as Uri
             val intent = Intent(Intent.ACTION_VIEW,uri)
             startActivity(intent)
         }

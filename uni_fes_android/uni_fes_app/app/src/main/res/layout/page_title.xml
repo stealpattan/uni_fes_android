@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:textSize="30sp"
+    android:gravity="center_horizontal"
+    android:id="@+id/titletext"
+    android:background="#EB6100"
+    android:textColor="#FFFFFF"
+    android:text="県大祭2017">
+
+</TextView>

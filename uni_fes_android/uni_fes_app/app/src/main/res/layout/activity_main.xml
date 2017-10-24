@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <include layout="@layout/page_title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <!-- news part below-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NEW's"
+                android:id="@+id/news"/>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal">
+
+                    <ImageButton
+                        android:src="@drawable/damy"
+                        android:id="@+id/newsimage1"
+                        android:background="@null"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:scaleType="fitCenter"/>
+
+                    <TextView
+                        android:text="news1"
+                        android:id="@+id/news1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal">
+
+                    <ImageButton
+                        android:src="@drawable/damy"
+                        android:id="@+id/newsimage2"
+                        android:background="@null"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:scaleType="fitCenter"/>
+
+                    <TextView
+                        android:text="news2"
+                        android:id="@+id/news2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal">
+
+                    <ImageButton
+                        android:src="@drawable/damy"
+                        android:id="@+id/newsimage3"
+                        android:background="@null"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:scaleType="fitCenter"/>
+
+                    <TextView
+                        android:text="news3"
+                        android:id="@+id/news3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:src="@drawable/seeall"
+                    android:layout_width="110dp"
+                    android:layout_height="55dp"
+                    android:id="@+id/allnewsbutton"
+                    android:background="@null"
+                    android:text=">see all"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:scaleType="fitCenter"/>
+            </RelativeLayout>
+            <!-- news part above-->
+
+            <!-- twitter part below-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="みんなの反応"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/reaction"/>
+                <WebView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:id="@+id/twitterview"/>
+                <Button
+                    android:text="   会場の様子をちゅいーと   "
+                    android:id="@+id/sendcomment"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/radius_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal" />
+            </LinearLayout>
+        </LinearLayout>
+        <!-- twitter part above-->
+
+        <include layout="@layout/under_menu_bar"/>
+    </LinearLayout>
+
+</LinearLayout>
